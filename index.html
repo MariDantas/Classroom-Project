@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Classroom Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="classroom.js"></script>
+        <script type="module" src="index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h1 class="nav-brand">Classroom</h1>
+        </nav>
+        
+        <main class="container">
+            <form id="grades-form">
+                <label class="label" for="your-grade">Enter grade</label>
+                <input type="number" min="0" max="20" class="input" required placeholder="Grade (0 and 20)" id="your-grade">
+                <input type="submit" class="btn btn-accent" value="Add" />
+            </form>
+        
+            <table border="1" id="stats-table" class="table table-center">
+                <thead>
+                    <tr>
+                        <th width="33%">Number of tests taken</th>
+                        <th width="33%">Sum of grades</th>
+                        <th>Average grade</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <table border="1" id="stats-table2" class="table table-center">
+                <thead>
+                    <tr>
+                        <th width="33%">Passing grades</th>
+                        <th width="33%">Failing grades</th>
+                        <th>Raised grades</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </main>
+    </body>
+</html>
