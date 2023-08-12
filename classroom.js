@@ -39,7 +39,7 @@ export function getPassingGrades(grades) {
 /** @param {number[]} grades */
 export function getFailingGrades(grades) {
     return grades.filter(function(grade){
-        return grade <= 9;
+        return grade < 10;
     })
 }
 
