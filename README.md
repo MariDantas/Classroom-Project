@@ -58,6 +58,9 @@ The **Classroom Project** transforms grade management into an intuitive and insi
 
 ## Update History
 
+### Part II
+* The project is now written with arrow functions, implicit return and inline `if` statement.
+
 ### Part I
 * Release of the **Classroom Project**.
 
