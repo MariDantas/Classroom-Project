@@ -1,23 +1,16 @@
 /** @param {number[]} grades */
-export function getNumberOfGrades(grades) {
-    return grades.length;
-
-}
+export const getNumberOfGrades = grades => grades.length;
 
 /** @param {number[]} grades */
-export function getSumGrades(grades) {
+export const getSumGrades = grades => {
     let sum = 0;
-
-    grades.forEach(function(grade){
-        sum += grade;
-    })
+    grades.forEach(grade => sum += grade);
 
     return sum;
 }
 
 /** @param {number[]} grades */
-export function getAverageValue(grades) {
-
+export const getAverageValue = grades => {
     const sum = getSumGrades(grades);
     const totalGrades = getNumberOfGrades(grades);
     let average = 0;
@@ -30,25 +23,10 @@ export function getAverageValue(grades) {
 }
 
 /** @param {number[]} grades */
-export function getPassingGrades(grades) {
-    return grades.filter(function(grade){
-        return grade >= 10;
-    })
-}
+export const getPassingGrades = grades => grades.filter(grade => grade >= 10);
 
 /** @param {number[]} grades */
-export function getFailingGrades(grades) {
-    return grades.filter(function(grade){
-        return grade < 10;
-    })
-}
+export const getFailingGrades = grades => grades.filter(grade => grade <= 9);
 
 /** @param {number[]} grades */
-export function getRaisedGrades(grades) {
-    return grades.map(function(grade){
-        if (grade < 20){
-            return grade+1;
-        }
-        return grade;
-    })
-}
+export const getRaisedGrades = grades => grades.map(grade => grade + 1 > 20 ? grade : grade + 1);
